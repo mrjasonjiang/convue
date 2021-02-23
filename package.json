@@ -1,6 +1,6 @@
 {
   "name": "convue",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "convue is a plugin for vite based on vite and vue3 that gives you a set of experiences for rapid development projects, similar to nuxt and umi.js.",
   "author": "ziping <ziping@xencapital.com>",
   "license": "MIT",
@@ -30,9 +30,12 @@
   "scripts": {
     "dev": "npm run build -- --watch",
     "build": "tsup src/index.ts --dts --format cjs,esm",
-    "example:dev": "npm -C example run dev",
-    "example:build": "npm -C example run build",
-    "example:serve": "npm -C example run serve",
+    "tsx:dev": "npm -C examples/tsx run dev",
+    "tsx:build": "npm -C examples/tsx run build",
+    "tsx:serve": "npm -C examples/tsx run serve",
+    "sfc:dev": "npm -C examples/tsx run dev",
+    "sfc:build": "npm -C examples/tsx run build",
+    "sfc:serve": "npm -C examples/tsx run serve",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
