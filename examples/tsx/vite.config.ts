@@ -5,6 +5,9 @@ import convue from '../../src';
 export default defineConfig({
   plugins: [
     vueJsx(),
-    ...convue({}),
+    ...convue({
+      styles: ['ant-design-vue/dist/antd.css'],
+      modules: ['ant-design-vue']
+    }),
   ],
 });

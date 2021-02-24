@@ -10,6 +10,7 @@ module.exports = {
       { text: '插件', link: '/zh/guide/plugins' },
       { text: '多语言', link: '/zh/guide/locales' },
       { text: 'head 标签', link: '/zh/guide/head' },
+      { text: '其他', link: '/zh/guide/other' },
     ];
   },
 

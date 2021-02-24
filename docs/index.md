@@ -51,6 +51,18 @@ app.use(i18n);
 app.mount('#app');
 ```
 
+Use all packages.
+
+```js
+import { createApp } from 'vue';
+import App from '. /src/App.vue';
+import convue from 'convue-package';
+
+const app = createApp(App);
+app.use(convue);
+app.mount('#app');
+```
+
 ## Using convue-cli
 
 convue provides a set of scaffolding tools for initializing projects, currently supporting both sfc (vue single file) and tsx development modes.

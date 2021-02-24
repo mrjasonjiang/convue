@@ -174,7 +174,6 @@ export function generateClientCode(routes: Route[], middlewares: any[], options:
     import store from 'store-generated';
 
     const routes = setupLayouts(${stringRoutes});
-    console.log(routes);
     const router = createRouter({
       history: ${router.history === 'hash' ? 'createWebHashHistory' : 'createWebHistory'}(),
       scrollBehavior: ${router.scrollBehavior},
