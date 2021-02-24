@@ -77,6 +77,8 @@ export interface Options {
      */
     extendRoute?: (route: Route, parent: Route | undefined) => Route | void;
   };
+  styles?: string[],
+  modules?: string[],
 
   store?: {
     /**

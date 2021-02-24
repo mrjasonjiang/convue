@@ -35,6 +35,8 @@ export interface Options {
   };
   loading?: string;
   progress?: boolean | Progress;
+  styles?: string[],
+  modules?: string[],
   page?: {
     /**
      * Relative path to the directory to search for page components.

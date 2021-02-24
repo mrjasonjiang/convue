@@ -10,6 +10,7 @@ module.exports = {
       { text: 'Plugins', link: '/guide/plugins' },
       { text: 'Locales', link: '/guide/locales' },
       { text: 'Head Tag', link: '/guide/head' },
+      { text: 'Other', link: '/guide/other' },
     ];
   },
 

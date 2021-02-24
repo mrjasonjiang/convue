@@ -6,6 +6,7 @@ import Store from './store';
 import Html from './html';
 import Plugin from './plugins';
 import Locale from './locales';
+import Package from './packages';
 import { Options } from './types';
 
 const convue = (options: Options) => {
@@ -27,6 +28,10 @@ const convue = (options: Options) => {
     }),
     Plugin(options.plugin),
     Locale(options.locale),
+    Package({
+      styles: options.styles,
+      modules: options.modules,
+    }),
   ];
 };
 

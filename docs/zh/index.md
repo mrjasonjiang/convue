@@ -52,6 +52,18 @@ app.use(i18n);
 app.mount('#app');
 ```
 
+使用所有的包.
+
+```js
+import { createApp } from 'vue';
+import App from '. /src/App.vue';
+import convue from 'convue-package';
+
+const app = createApp(App);
+app.use(convue);
+app.mount('#app');
+```
+
 ## 使用脚手架
 
 convue 提供了一套初始化项目的脚手架工具，目前支持 sfc (vue 单文件) 形式和 tsx 方式两种开发模式。
