@@ -42,6 +42,8 @@ export function generateClientCode(stores: any[]) {
     }
   });
 
+  if (!stores.length) return '';
+
   return `
     import { createStore } from 'vuex'
     ${stores.map((n) => n.imports).join('\n')}

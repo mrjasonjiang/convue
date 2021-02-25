@@ -24,6 +24,8 @@ export function generateLocales(filesPath: string[], options: ResolvedOptions) {
 export function generateClientCode(locales: any[], options: ResolvedOptions) {
   const defaultKeys = locales.map((n) => `'${n.defaultKey}'`);
 
+  if (!locales.length) return '';
+
   return `
     import { createI18n } from 'vue-i18n'
     ${locales.map((n) => n.imports).join('\n')}
